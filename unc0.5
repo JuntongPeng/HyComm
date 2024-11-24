@@ -1,0 +1,28 @@
+nohup: ignoring input
+1.0
+Left hand visualizing: True
+Creating Model
+using dir head
+cuda
+Loading Model from checkpoint
+resuming best validation model at epoch 29
+resume from 29 epoch.
+Traceback (most recent call last):
+  File "opencood/tools/inference.py", line 404, in <module>
+    main()
+  File "opencood/tools/inference.py", line 170, in main
+    model.cuda()
+  File "/GPFS/rhome/juntongpeng/miniconda3/envs/coalign/lib/python3.7/site-packages/torch/nn/modules/module.py", line 680, in cuda
+    return self._apply(lambda t: t.cuda(device))
+  File "/GPFS/rhome/juntongpeng/miniconda3/envs/coalign/lib/python3.7/site-packages/torch/nn/modules/module.py", line 570, in _apply
+    module._apply(fn)
+  File "/GPFS/rhome/juntongpeng/miniconda3/envs/coalign/lib/python3.7/site-packages/torch/nn/modules/module.py", line 570, in _apply
+    module._apply(fn)
+  File "/GPFS/rhome/juntongpeng/miniconda3/envs/coalign/lib/python3.7/site-packages/torch/nn/modules/module.py", line 570, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/GPFS/rhome/juntongpeng/miniconda3/envs/coalign/lib/python3.7/site-packages/torch/nn/modules/module.py", line 593, in _apply
+    param_applied = fn(param)
+  File "/GPFS/rhome/juntongpeng/miniconda3/envs/coalign/lib/python3.7/site-packages/torch/nn/modules/module.py", line 680, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+KeyboardInterrupt
